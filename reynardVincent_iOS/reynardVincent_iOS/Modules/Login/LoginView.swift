@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct LoginView: View {
+    var presenter: VTPLoginProtocol?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack(alignment: .leading){
+                Text("Username")
+                TextField("Email", text: .constant(""))
+                Text("Pasword")
+                TextField("Password", text: .constant(""))
+                Spacer()
+                    .frame(height: 30)
+                Button {
+                    
+                } label: {
+                    Text("Login")
+                }
+                Spacer()
+                    .frame(height: 10)
+                Button {
+                    
+                } label: {
+                    Text("Register")
+                }
+            }
+            .padding(50)
+        }
     }
 }
 
