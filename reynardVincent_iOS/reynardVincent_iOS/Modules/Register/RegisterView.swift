@@ -36,7 +36,7 @@ struct RegisterView: View {
                 Button {
                     
                 } label: {
-                    Text("Don't have an Account?")
+                    Text("Already have an Account?")
                         .font(.system(size: 12))
                         .padding()
                 }

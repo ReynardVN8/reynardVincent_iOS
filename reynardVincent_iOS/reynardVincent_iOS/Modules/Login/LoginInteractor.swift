@@ -5,6 +5,8 @@
 //  Created by ReynardVN8 on 01/05/25.
 //
 
+import Alamofire
+
 class LoginInteractor: PTILoginProtocol {
     var presenter: ITPLoginProtocol?
     
