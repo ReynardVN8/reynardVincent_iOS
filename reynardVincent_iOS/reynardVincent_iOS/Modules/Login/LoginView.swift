@@ -17,7 +17,7 @@ struct LoginView: View {
                 TextField("", text: .constant(""))
                     .frame(height: 40)
                     .background(.gray)
-                Text("Pasword")
+                Text("Password")
                 TextField("", text: .constant(""))
                     .frame(height: 40)
                     .background(.gray)

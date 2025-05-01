@@ -9,7 +9,92 @@ import SwiftUI
 
 struct RegisterView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10){
+            Text("Username")
+            TextField("", text: .constant(""))
+                .frame(height: 40)
+                .background(.gray)
+            Text("Age")
+            TextField("", text: .constant(""))
+                .frame(height: 40)
+                .background(.gray)
+            Text("Email")
+            TextField("", text: .constant(""))
+                .frame(height: 40)
+                .background(.gray)
+            Text("Password")
+            TextField("", text: .constant(""))
+                .frame(height: 40)
+                .background(.gray)
+            Text("Confirm Password")
+            TextField("", text: .constant(""))
+                .frame(height: 40)
+                .background(.gray)
+            Spacer()
+                .frame(height: 10)
+            HStack{
+                Button {
+                    
+                } label: {
+                    Text("Don't have an Account?")
+                        .font(.system(size: 12))
+                        .padding()
+                }
+                .background(.gray)
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Text("Login")
+                        .font(.system(size: 12))
+                        .padding()
+                }
+                .background(.gray)
+            }
+            Spacer()
+                .frame(height: 10)
+            HStack{
+                Spacer()
+                Text("-------- or -------")
+                Spacer()
+            }
+            HStack{
+                Spacer()
+                Text("Login With")
+                Spacer()
+            }
+            Spacer()
+                .frame(height: 10)
+            HStack(alignment: .center){
+                Button {
+                    
+                } label: {
+                    Text("Login")
+                        .font(.system(size: 12))
+                        .padding()
+                }
+                .background(.gray)
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Text("Login")
+                        .font(.system(size: 12))
+                        .padding()
+                }
+                .background(.gray)
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Text("Login")
+                        .font(.system(size: 12))
+                        .padding()
+                }
+                .background(.gray)
+            }
+        }
+        .padding(50)
     }
 }
 
