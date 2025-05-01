@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		93583E822DC34D5400C44ACA /* SimpleKeychain.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E7E2DC34D5400C44ACA /* SimpleKeychain.xcframework */; };
+		93583E832DC34D5400C44ACA /* SimpleKeychain.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E7E2DC34D5400C44ACA /* SimpleKeychain.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93583E842DC34D5400C44ACA /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E7F2DC34D5400C44ACA /* Alamofire.xcframework */; };
+		93583E852DC34D5400C44ACA /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E7F2DC34D5400C44ACA /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93583E862DC34D5400C44ACA /* Auth0.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E802DC34D5400C44ACA /* Auth0.xcframework */; };
+		93583E872DC34D5400C44ACA /* Auth0.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E802DC34D5400C44ACA /* Auth0.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93583E882DC34D5400C44ACA /* JWTDecode.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E812DC34D5400C44ACA /* JWTDecode.xcframework */; };
+		93583E892DC34D5400C44ACA /* JWTDecode.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93583E812DC34D5400C44ACA /* JWTDecode.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		93EC6BB02DC28A550050F9D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,7 +34,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		93583E8A2DC34D5400C44ACA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				93583E852DC34D5400C44ACA /* Alamofire.xcframework in Embed Frameworks */,
+				93583E892DC34D5400C44ACA /* JWTDecode.xcframework in Embed Frameworks */,
+				93583E872DC34D5400C44ACA /* Auth0.xcframework in Embed Frameworks */,
+				93583E832DC34D5400C44ACA /* SimpleKeychain.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		93583E7E2DC34D5400C44ACA /* SimpleKeychain.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SimpleKeychain.xcframework; path = Carthage/Build/SimpleKeychain.xcframework; sourceTree = "<group>"; };
+		93583E7F2DC34D5400C44ACA /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		93583E802DC34D5400C44ACA /* Auth0.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Auth0.xcframework; path = Carthage/Build/Auth0.xcframework; sourceTree = "<group>"; };
+		93583E812DC34D5400C44ACA /* JWTDecode.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JWTDecode.xcframework; path = Carthage/Build/JWTDecode.xcframework; sourceTree = "<group>"; };
 		93EC6B9F2DC28A530050F9D1 /* reynardVincent_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reynardVincent_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EC6BAF2DC28A550050F9D1 /* reynardVincent_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reynardVincent_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EC6BB92DC28A550050F9D1 /* reynardVincent_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reynardVincent_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93583E842DC34D5400C44ACA /* Alamofire.xcframework in Frameworks */,
+				93583E882DC34D5400C44ACA /* JWTDecode.xcframework in Frameworks */,
+				93583E862DC34D5400C44ACA /* Auth0.xcframework in Frameworks */,
+				93583E822DC34D5400C44ACA /* SimpleKeychain.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +108,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93583E7D2DC34D5400C44ACA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93583E7F2DC34D5400C44ACA /* Alamofire.xcframework */,
+				93583E802DC34D5400C44ACA /* Auth0.xcframework */,
+				93583E812DC34D5400C44ACA /* JWTDecode.xcframework */,
+				93583E7E2DC34D5400C44ACA /* SimpleKeychain.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93EC6B962DC28A530050F9D1 = {
 			isa = PBXGroup;
 			children = (
 				93EC6BA12DC28A530050F9D1 /* reynardVincent_iOS */,
 				93EC6BB22DC28A550050F9D1 /* reynardVincent_iOSTests */,
 				93EC6BBC2DC28A550050F9D1 /* reynardVincent_iOSUITests */,
+				93583E7D2DC34D5400C44ACA /* Frameworks */,
 				93EC6BA02DC28A530050F9D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +150,7 @@
 				93EC6B9B2DC28A530050F9D1 /* Sources */,
 				93EC6B9C2DC28A530050F9D1 /* Frameworks */,
 				93EC6B9D2DC28A530050F9D1 /* Resources */,
+				93583E8A2DC34D5400C44ACA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,16 +442,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = reynardVincent_iOS/reynardVincent_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"reynardVincent_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"reynardVincent_iOS/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,16 +472,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = reynardVincent_iOS/reynardVincent_iOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"reynardVincent_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"reynardVincent_iOS/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

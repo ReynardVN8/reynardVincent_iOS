@@ -1,0 +1,2 @@
+github "Alamofire/Alamofire"
+github "auth0/Auth0.swift" ~> 2.0
