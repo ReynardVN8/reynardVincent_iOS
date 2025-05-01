@@ -13,23 +13,33 @@ struct RegisterView: View {
             Text("Username")
             TextField("", text: .constant(""))
                 .frame(height: 40)
-                .background(.gray)
+                .border(.black, width: 2)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             Text("Age")
             TextField("", text: .constant(""))
                 .frame(height: 40)
-                .background(.gray)
+                .border(.black, width: 2)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             Text("Email")
             TextField("", text: .constant(""))
                 .frame(height: 40)
-                .background(.gray)
+                .border(.black, width: 2)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             Text("Password")
             TextField("", text: .constant(""))
                 .frame(height: 40)
-                .background(.gray)
+                .border(.black, width: 2)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             Text("Confirm Password")
             TextField("", text: .constant(""))
                 .frame(height: 40)
-                .background(.gray)
+                .border(.black, width: 2)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             Spacer()
                 .frame(height: 10)
             HStack{
@@ -40,7 +50,8 @@ struct RegisterView: View {
                         .font(.system(size: 12))
                         .padding()
                 }
-                .background(.gray)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
                 Spacer()
                 Button {
                     
@@ -49,7 +60,8 @@ struct RegisterView: View {
                         .font(.system(size: 12))
                         .padding()
                 }
-                .background(.gray)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             }
             Spacer()
                 .frame(height: 10)
@@ -58,9 +70,16 @@ struct RegisterView: View {
                 Text("-------- or -------")
                 Spacer()
             }
+            bottomRegister
+        }
+        .padding(50)
+    }
+    
+    var bottomRegister: some View {
+        VStack{
             HStack{
                 Spacer()
-                Text("Login With")
+                Text("Register With")
                 Spacer()
             }
             Spacer()
@@ -69,32 +88,37 @@ struct RegisterView: View {
                 Button {
                     
                 } label: {
-                    Text("Login")
-                        .font(.system(size: 12))
+                    Image("AppleIcon")
+                        .frame(width: 20, height: 20)
                         .padding()
                 }
-                .background(.gray)
+                .padding(10)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
                 Spacer()
                 Button {
                     
                 } label: {
-                    Text("Login")
-                        .font(.system(size: 12))
+                    Image("GoogleIcon")
+                        .frame(width: 20, height: 20)
                         .padding()
                 }
-                .background(.gray)
+                .padding(10)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
                 Spacer()
                 Button {
                     
                 } label: {
-                    Text("Login")
-                        .font(.system(size: 12))
+                    Image("FacebookIcon")
+                        .frame(width: 20, height: 20)
                         .padding()
                 }
-                .background(.gray)
+                .padding(10)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 5))
             }
         }
-        .padding(50)
     }
 }
 

@@ -38,7 +38,7 @@ class LoginPresenter: VTPLoginProtocol {
 }
 
 extension LoginPresenter: PTVLoginProtocol{
-    func setSuccessLogin(result: Bool) {
+    func setSuccessLogin(message: String) {
         
     }
     
