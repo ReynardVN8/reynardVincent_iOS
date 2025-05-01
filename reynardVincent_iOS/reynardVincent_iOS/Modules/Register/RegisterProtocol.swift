@@ -14,8 +14,8 @@ protocol VTPRegisterProtocol: AnyObject {
     
     func getRegisterInfo()
     func getAuth0RegisterCredential()
-    func goToLogin() -> AnyView
-    func goToRegister() -> AnyView
+    func goToLogin() -> any View
+    func goToHomepage() -> any View
 }
 
 protocol PTVRegisterProtocol: AnyObject {
@@ -36,6 +36,6 @@ protocol ITPRegisterProtocol: AnyObject {
 }
 
 protocol PTRRegisterProtocol: AnyObject {
-    func pushToLogin() -> AnyView
-    func pushToRegister() -> AnyView
+    func pushToLogin() -> any View
+    func pushToHomepage() -> any View
 }

@@ -5,3 +5,14 @@
 //  Created by ReynardVN8 on 01/05/25.
 //
 
+import SwiftUI
+
+class RegisterRouter: PTRRegisterProtocol {
+    func pushToLogin() -> any View {
+        return LoginView()
+    }
+    
+    func pushToHomepage() -> any View {
+        return HomepageView()
+    }
+}
