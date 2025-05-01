@@ -19,7 +19,7 @@ protocol VTPRegisterProtocol: AnyObject {
 }
 
 protocol PTVRegisterProtocol: AnyObject {
-    func setSuccessRegister(result: Bool)
+    func setSuccessRegister(message: String)
     func setFailedRegister(message: String)
 }
 
@@ -31,7 +31,7 @@ protocol PTIRegisterProtocol: AnyObject {
 }
 
 protocol ITPRegisterProtocol: AnyObject {
-    func setSuccessRegister(isSuccess: Bool)
+    func setSuccessRegister(message: String)
     func setFailedRegister(message: String)
 }
 

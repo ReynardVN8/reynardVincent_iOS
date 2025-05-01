@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import Auth0
 
 class LoginInteractor: PTILoginProtocol {
     var presenter: ITPLoginProtocol?
@@ -15,6 +16,16 @@ class LoginInteractor: PTILoginProtocol {
     }
     
     func fetchAuth0LoginCredential() {
-        
+        Auth0
+            .webAuth()
+            .useHTTPS()
+            .start { result in
+                switch result {
+                case .success(let credentials):
+                    self.presenter?.setSuccessLogin(message: "Obtained credentials: \(credentials)")
+                case .failure(let error):
+                    self.presenter?.setFailedLogin(message: "Failed with: \(error)")
+                }
+            }
     }
 }

@@ -19,7 +19,7 @@ protocol VTPLoginProtocol: AnyObject {
 }
 
 protocol PTVLoginProtocol: AnyObject {
-    func setSuccessLogin(result: Bool)
+    func setSuccessLogin(message: String)
     func setFailedLogin(message: String)
 }
 
@@ -31,7 +31,7 @@ protocol PTILoginProtocol: AnyObject {
 }
 
 protocol ITPLoginProtocol: AnyObject {
-    func setSuccessLogin(isSuccess: Bool)
+    func setSuccessLogin(message: String)
     func setFailedLogin(message: String)
 }
 
